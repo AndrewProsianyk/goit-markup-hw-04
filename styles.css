@@ -8,6 +8,7 @@
   --hero-background: #c4c4c4;
   --border: #eeeeee;
   --icon-background: #f5f4fa;
+  --logo-color: rgba(175, 177, 184, 1);
 }
 
 /* Header */
@@ -277,7 +278,7 @@ img {
 }
 .card-content {
   background-color: var(--secondary-title-color);
-  padding: 30px 0px;
+  padding: 30px 32px;
 }
 .members-name {
   color: var(--primary-title-color);
@@ -294,8 +295,46 @@ img {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
+.soc-media-list {
+  display: flex;
+}
+.soc-media-item {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.soc-media-item:not(:last-child) {
+  margin-right: 10px;
+}
+.soc-media-link {
+  display: flex;
+
+  width: 44px;
+  height: 44px;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.soc-media-logo {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: var(--logo-color);
+}
+
+.soc-media-link:hover,
+.soc-media-link:focus {
+  background-color: var(--accent-color);
+}
+.soc-media-link:hover .soc-media-logo,
+.soc-media-link:focus .soc-media-logo {
+  fill: #ffffff;
+}
 /* CLIENTS SECTION */
 .clients {
   padding-top: 94px;
@@ -307,7 +346,7 @@ img {
 .clients-list-item {
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--logo-color);
   border-radius: 4px;
 }
 .clients-list-item:not(:last-child) {
@@ -321,7 +360,7 @@ img {
   align-items: center;
 }
 .client-logo {
-  fill: rgba(175, 177, 184, 1);
+  fill: var(--logo-color);
 }
 
 .clients-list-item:hover {
@@ -354,15 +393,71 @@ img {
 }
 /* Фон сделал для видимости контента с белым шрифтом */
 .page-footer {
+  display: flex;
   background-color: var(--footer-background);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+.address-container {
+  margin-right: 70px;
+}
+.join-text {
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .address-list-item {
   display: block;
 }
 .address-list-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-media-list {
+  display: flex;
+}
+.footer-media-item {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.footer-media-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-media-link {
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.footer-media-logo {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.footer-media-link:hover,
+.footer-media-link:focus {
+  background-color: var(--accent-color);
+}
+.footer-media-link:hover .footer-media-logo,
+.footer-media-link:focus .footer-media-logo {
+  fill: #ffffff;
 }
 
 /* Стили для Portfolio */
