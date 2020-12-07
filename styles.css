@@ -138,7 +138,7 @@ img {
 /* Main */
 .hero-section {
   max-width: 1600px;
-  height: 600px;
+ padding: 200px 0px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -155,8 +155,7 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+ 
 }
 .hero-title {
   color: var(--secondary-title-color);
@@ -189,8 +188,7 @@ img {
 
 /* FEATURES */
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0px;
 }
 .features-list {
   display: flex;
@@ -252,13 +250,11 @@ img {
 }
 
 /* НАША КОМАНДА */
-.section {
-  background-color: var(--button-background);
-}
+
 
 .members {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background-color: var(--button-background);
+  padding: 94px 0px;
   text-align: center;
 }
 
